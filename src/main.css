@@ -1,0 +1,25 @@
+@import "@fontsource/pacifico";
+@import "@fontsource/merriweather";
+
+/* Theme 1: Light - Default */
+body.theme-light {
+  @apply bg-white text-black font-sans;
+}
+
+/* Theme 2: Dark */
+body.theme-dark {
+  @apply bg-gray-900 text-white;
+  font-family: "Merriweather", serif;
+}
+
+/* Theme 3: Funky */
+body.theme-funky {
+  background: linear-gradient(to right, #f6d365, #fda085);
+  color: #333;
+  font-family: "Pacifico", cursive;
+}
+
+/* Smooth transition when switching themes */
+.transition-theme {
+  transition: background-color 0.5s ease, color 0.5s ease, font-family 0.5s ease;
+}
